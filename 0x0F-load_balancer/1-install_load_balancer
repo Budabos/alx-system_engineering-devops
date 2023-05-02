@@ -7,7 +7,7 @@ sudo apt-get install haproxy
 sudo echo "ENABLED=1" > /etc/default/haproxy
 
 LISTEN="
-listen lb_server
+listen $ MY_ID-lb-01
 	bind *:80
 	mode http
 	balance roundrobin
