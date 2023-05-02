@@ -13,8 +13,8 @@ frontend Budabos.tech
 
 backend web_servers
         balance roundrobin
-        server 168448-web-01 54.84.65.229
-        server 168448-web-02 54.175.134.97
+        server 168448-web-01 54.84.65.229:80
+        server 168448-web-02 54.175.134.97:80
 ' >> /etc/haproxy/haproxy.cfg
 
 # Restart HAproxy service
