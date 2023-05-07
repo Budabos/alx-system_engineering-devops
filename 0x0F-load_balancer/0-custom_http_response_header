@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# configure web server for error 404 and add custom header
+# Configure Nginx so that its HTTP header contains a custom header.
 
 sudo apt-get update
-sudo apt-get install nginx
+sudo apt-get install -y nginx
 sudo touch /var/www/html/index.html
 sudo sh -c "echo 'Hello World!' > /var/www/html/index.html"
 sudo touch /var/www/html/404.html
